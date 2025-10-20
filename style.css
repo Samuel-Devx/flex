@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    color: rgb(255, 251, 13);
+    font-family: "Lilita One", sans-serif;
+
+}
+body {
+    background-color: #d6c079;
+
+}
+
+.containerflex{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 20px;
+    flex-wrap: wrap ; 
+}
+.containerflex > div {
+    flex: 1 1 10%; 
+     padding: 15px;
+     transition: all 0.8s ease;
+}
+.containerflex div:hover {
+    transform: scale(1.1);
+}
+
+.homerDiv {
+    background-color: #FADA00;
+  
+    border-radius: 12px;
+    color: #003366;
+    text-align: center;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+.fotohomer {
+    width: 18em;
+    margin: 15px;
+    border-radius: 15px;
+    height: 18em;
+}
+
+.margieDiv {
+    background-color: #1C39BB;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    padding: 10px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+.fotomargie {
+    width: 18em;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.fotobart {
+     width: 18em;
+    margin: 15px;
+    border-radius: 15px;
+}
+.bartDiv {
+    background-color: #ED1C24;
+    color: #FADA00;
+    border-radius: 12px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    
+}
+
+@media (max-width: 768px) {
+  .containerflex > div {
+    flex: 1 1 100%;
+  }
+}
+
+footer {
+    background-color: yellow;
+    position: fixed;
+    margin-top: 90px;
+    width: 90em;
+    text-align: center;
+}
+
