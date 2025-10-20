@@ -89,10 +89,27 @@ body {
 }
 
 footer {
-    background-color: yellow;
-    position: fixed;
-    margin-top: 90px;
-    width: 90em;
     text-align: center;
 }
+footer p {
+    background-color: #FADA00;
+    width: 20em;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    padding: auto;
+    border-radius: 8px;
+}
+footer button {
+    width: 10px;
+    height: 10px;
+}
 
+footer a {
+    width: 10px;
+}
+
+.redes {
+    width: 40px;
+    height: 40px;
+}
