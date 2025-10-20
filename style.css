@@ -3,113 +3,144 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
+body {
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(248, 244, 28) );
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1 {
     text-align: center;
     margin: 20px;
-    color: rgb(255, 251, 13);
+    color: white;
     font-family: "Lilita One", sans-serif;
-
-}
-body {
-    background-color: #d6c079;
-
+    font-size: 2.5rem;
+    text-shadow: rgb(78, 78, 78) 5px 5px 5px;
 }
 
-.containerflex{
+
+.containerflex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
     gap: 25px;
     padding: 20px;
-    flex-wrap: wrap ; 
+    flex-wrap: wrap;
 }
+
+
 .containerflex > div {
-    flex: 1 1 10%; 
-     padding: 15px;
-     transition: all 0.8s ease;
+    flex: 1 1 300px;
+    max-width: 350px;
+    padding: 15px;
+    border-radius: 12px;
+    transition: all 0.8s ease;
+    text-align: center;
 }
+
 .containerflex div:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .homerDiv {
     background-color: #FADA00;
-  
-    border-radius: 12px;
     color: #003366;
-    text-align: center;
-    height: auto;
-    display: block;
-    margin: 0 auto 10px auto;
 }
-.fotohomer {
-    width: 18em;
-    margin: 15px;
-    border-radius: 15px;
-    height: 18em;
-}
+
 
 .margieDiv {
     background-color: #1C39BB;
     color: white;
-    text-align: center;
-    border-radius: 12px;
-    padding: 10px;
-    height: auto;
-    display: block;
-    margin: 0 auto 10px auto;
-}
-.fotomargie {
-    width: 18em;
-    margin: 15px;
-    border-radius: 15px;
 }
 
-.fotobart {
-     width: 18em;
-    margin: 15px;
-    border-radius: 15px;
-}
+
 .bartDiv {
     background-color: #ED1C24;
     color: #FADA00;
-    border-radius: 12px;
-    height: auto;
-    display: block;
-    margin: 0 auto 10px auto;
-    text-align: center;
-    
 }
 
-@media (max-width: 768px) {
-  .containerflex > div {
-    flex: 1 1 100%;
-  }
+
+.fotohomer {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 15px auto 15px auto;
+    border-radius: 15px;
+    display: block;
+    
+}
+.fotomargie, .fotobart {
+     width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 15px auto 122px auto;
+    border-radius: 15px;
+    display: block;
 }
 
 footer {
     text-align: center;
-}
-footer p {
-    background-color: #FADA00;
-    width: 20em;
-    margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 20px;
-    padding: auto;
-    border-radius: 8px;
-}
-footer button {
-    width: 10px;
-    height: 10px;
+    margin-top: 30px;
+    padding: 20px 0;
 }
 
-footer a {
-    width: 10px;
+footer p {
+    background-color: #FADA00;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
 }
 
 .redes {
     width: 40px;
     height: 40px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.redes:hover {
+    transform: scale(1.2);
+}
+
+
+footer a {
+    text-decoration: none;
+}
+
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .containerflex {
+        gap: 20px;
+    }
+
+    .containerflex > div {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+        margin: 15px;
+    }
+
+    .containerflex > div {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        width: 90%;
+    }
 }
